@@ -1,18 +1,74 @@
 # BIS Standards Recommendation Engine
 
-## Setup
+AI-powered system to recommend relevant Bureau of Indian Standards (BIS) based on product descriptions.
+
+---
+
+## 🚀 Features
+
+- Hybrid Retrieval (BM25 + Dense Embeddings)  
+- Cross-Encoder Re-ranking  
+- Fast and accurate BIS standard recommendation  
+- Streamlit-based interactive UI  
+- Low-latency inference  
+
+---
+
+## 🛠️ Setup
+
 pip install -r requirements.txt
 
-## Run Inference
+---
+
+## ▶️ Run Inference
+
 python inference.py --input public_test_set.json --output my_output.json
 
-## Run UI
+---
+
+## 💻 Run UI
+
 streamlit run app.py
 
-## Architecture
-Hybrid Retrieval (BM25 + Dense) + Re-ranking
+---
 
-## Results
-Hit@3: 100%
-MRR@5: 1.0
-Latency: <1 sec
+## 🧠 System Architecture
+
+User Query  
+→ Hybrid Retrieval (BM25 + Dense)  
+→ Cross-Encoder Re-ranking  
+→ Recommendation Engine  
+→ Output (Top BIS Standards)
+
+---
+
+## 📊 Results (Public Validation Set)
+
+- Hit Rate @3: 100%  
+- MRR @5: 1.0000  
+- Average Latency: < 1 second  
+
+---
+
+## 📂 Project Structure
+
+/src        # Core pipeline logic  
+/data       # Dataset and results  
+inference.py  
+eval_script.py  
+app.py  
+requirements.txt  
+presentation.pdf  
+
+---
+
+## 📌 Notes
+
+- Built using BIS SP-21 dataset (Building Materials)  
+- Designed for Micro & Small Enterprise (MSE) compliance assistance  
+
+---
+
+## 👤 Author
+
+Muhammed Sahal K B
