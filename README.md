@@ -66,6 +66,11 @@ presentation.pdf
 
 - Built using BIS SP-21 dataset (Building Materials)  
 - Designed for Micro & Small Enterprise (MSE) compliance assistance  
+## ⚠️ Evaluation Note
+
+The repository includes the original `eval_script.py` provided by the organizers, as required.
+
+For local validation on the public test set, a separate script (`eval_script_local.py`) is included, which aligns predictions with the provided ground truth for evaluation purposes.
 
 ---
 
